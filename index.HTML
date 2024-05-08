@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Canciones</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="reproductor.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="lista-canciones">
+            <h1>LISTA DE CANCIONES</h1>
+            <ol id="lista-de-canciones">
+                <li><a href="#" onclick="miReproductor.play(0)">5:24</a></li>
+                <li><a href="#" onclick="miReproductor.play(1)">Gordo</a></li>
+                <li><a href="#" onclick="miReproductor.play(2)">De adentro pa afuera</a></li>
+                <li><a href="#" onclick="miReproductor.play(3)">NASA</a></li>
+                <li><a href="#" onclick="miReproductor.play(4)">Una vida pasada</a></li>
+                <li><a href="#" onclick="miReproductor.play(5)">Ambulancia</a></li>
+                <li><a href="#" onclick="miReproductor.play(6)">Mimos</a></li>
+                <li><a href="#" onclick="miReproductor.play(7)">Mientras me curo del cora</a></li>
+                <li><a href="#" onclick="miReproductor.play(8)">Mi plan de vida</a></li>
+                <li><a href="#" onclick="miReproductor.play(9)">En esta boca</a></li>
+                <li><a href="#" onclick="miReproductor.play(10)">Besame bonito</a></li>
+                <li><a href="#" onclick="miReproductor.play(11)">Idontwannabeyouanymore</a></li>
+                <li><a href="#" onclick="miReproductor.play(12)">Happier than ever</a></li>
+                <li><a href="#" onclick="miReproductor.play(13)">Lovely</a></li>
+                <li><a href="#" onclick="miReproductor.play(14)">If the world was ending</a></li>
+            </ol>
+        </div>
+        <div class="reproductor">
+            <div class="portada">
+                <img id="portada-album" src="https://cdn-icons-png.flaticon.com/512/26/26606.png">
+            </div>
+            <div class="informacion-cancion">
+                <h3 id="titulo-cancion"></h3>
+                <p id="artista-cancion"></p>
+                <p id="album-cancion"></p>
+                <p id="duracion-cancion"></p>
+            </div>
+            <div class="controles">
+                <button id="btn-reproducir-pausar" onclick="miReproductor.playPause()">Reproducir/Pausar</button>
+                <button id="btn-detener" onclick="miReproductor.stop()">Detener</button>
+                <button id="btn-aleatorio" onclick="miReproductor.shuffle()">Aleatorio</button>
+                <button id="btn-siguiente" onclick="miReproductor.next()">Siguiente</button>
+                <button id="btn-anterior" onclick="miReproductor.prev()">Anterior</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
